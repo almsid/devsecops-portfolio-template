@@ -38,7 +38,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/devops-portfolio
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/devsecops-portfolio-template
   # Used by the tag-update step to skip triggering another pipeline run
   CI_COMMIT_MESSAGE: "ci: update image tag to"
 
@@ -367,7 +367,7 @@ jobs:
         run: |
           SHORT_SHA=$(echo "${{ github.sha }}" | head -c 7)
           cd k8s/base
-          kustomize edit set image ghcr.io/OWNER/devops-portfolio=${{ env.IMAGE_NAME }}:sha-${SHORT_SHA}
+          kustomize edit set image ghcr.io/almsid/devsecops-portfolio-template=${{ env.IMAGE_NAME }}:sha-${SHORT_SHA}
           echo "Updated image tag to sha-${SHORT_SHA}"
           cat kustomization.yaml
 
