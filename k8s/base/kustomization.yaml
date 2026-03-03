@@ -9,4 +9,4 @@ resources:
 images:
 - name: ghcr.io/almsid/devsecops-portfolio-template
   newName: ghcr.io/almsid/devsecops-portfolio-template
-  newTag: sha-5d3914a
+  newTag: sha-f811f41
