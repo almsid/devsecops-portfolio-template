@@ -7,6 +7,6 @@ resources:
 - configmap.yaml
 
 images:
-- name: ghcr.io/almsid/devops-portfolio
-  newName: ghcr.io/ziyotek-edu/devops-portfolio
+- name: ghcr.io/almsid/devsecops-portfolio-template
+  newName: ghcr.io/almsid/devsecops-portfolio-template
   newTag: sha-5d3914a
