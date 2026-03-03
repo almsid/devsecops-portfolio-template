@@ -17,7 +17,7 @@ spec:
       serviceAccountName: portfolio
       containers:
         - name: portfolio
-          image: ghcr.io/OWNER/devops-portfolio
+          image: ghcr.io/almsid/devops-portfolio
           ports:
             - containerPort: 5000
               name: http
